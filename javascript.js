@@ -1,7 +1,7 @@
 const container= document.querySelector('#container')
 
 let rowNumber
-rowNumber=18
+rowNumber=17
 
 let total=rowNumber*(rowNumber+1)
 
