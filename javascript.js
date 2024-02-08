@@ -1,19 +1,17 @@
 const container= document.querySelector('#container')
 
 let rowNumber
-rowNumber=5
+rowNumber=16
 let total=rowNumber*(rowNumber+1)
 
 let createGrid= function(){
-
-
-
 for (let i=0;i<total;i++){
     const squareDiv=document.createElement('div')
     squareDiv.classList.add('squareDiv')
    if ((i%((Number(rowNumber))+1))===0){
-    squareDiv.setAttribute('style', ' width: 100%; border: 0;height: 0;')
+    squareDiv.setAttribute('style', ' width: 100%; border: 0;height: 0; gap:0px; margin:0px')
    }
+   else squareDiv.setAttribute('style', `width:(600/${rowNumber})px`)
     container.appendChild(squareDiv)
 }
 }
