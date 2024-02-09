@@ -1,9 +1,16 @@
 
 *{
-   
-    border:solid 2px black
+   box-sizing:border-box;
+    
     
 }
+
+
+#webpageContainer{
+    display:flex;
+    justify-content:center
+}
+
 
 #buttonContainer{
     display:flex;
@@ -11,15 +18,15 @@
     margin:20px
 }
 .squareDiv{
-    border: 1px solid silver;
+    border: 1px solid black;
   aspect-ratio: 1;
 }
 
 #container{
-    height:600px;
-    width:600px;
+    height:400px;
+    width:400px;
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
+    
     }
 
