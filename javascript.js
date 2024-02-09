@@ -33,7 +33,11 @@ let sizeChange=function(){
     rowNumber=0
     total=0
    rowNumber=(prompt("What size would you like the grid to be?"))
+   if (rowNumber>100) {
+    rowNumber=(prompt('Size cannot be over 100, please try again'))
+}
    total=(Number(rowNumber))*((Number(rowNumber)))
+
 
     createGrid()
 }
