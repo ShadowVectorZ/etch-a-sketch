@@ -8,8 +8,8 @@ let createGrid= function(){
 for (let i=0;i<total;i++){
     const squareDiv=document.createElement('div')
     squareDiv.classList.add('squareDiv')
-    let pixelSize =600/rowNumber
-    squareDiv.setAttribute('style',  `height:${pixelSize}px; width:${pixelSize}px` ) 
+    let pixelSize =(100/(rowNumber))
+    squareDiv.setAttribute('style',  `width:${pixelSize}%` ) 
 
     container.appendChild(squareDiv)
 }
