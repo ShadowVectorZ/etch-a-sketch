@@ -4,18 +4,28 @@ let rowNumber
 rowNumber=16
 let total=rowNumber*(rowNumber)
 
+
+
+
 let createGrid= function(){
 for (let i=0;i<total;i++){
-    const squareDiv=document.createElement('div')
+     let squareDiv=document.createElement('div')
     squareDiv.classList.add('squareDiv')
     let pixelSize =(100/(rowNumber))
     squareDiv.setAttribute('style',  `width:${pixelSize}%` ) 
+    squareDiv.addEventListener('mouseenter', ()=>{
+        squareDiv.style.backgroundColor='black';
+    })
+    container.appendChild(squareDiv)   
+}
 
-    container.appendChild(squareDiv)
 }
-}
+
 
 createGrid()
+
+
+
 
 let sizeChange=function(){
     while( container.hasChildNodes() ){
@@ -29,3 +39,5 @@ let sizeChange=function(){
 }
 const sizeButton=document.querySelector('#sizeButton')
 sizeButton.addEventListener('click', sizeChange);
+
+
